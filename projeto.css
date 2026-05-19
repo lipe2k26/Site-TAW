@@ -1,0 +1,41 @@
+.main-visual {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.moldura-imagem {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    border: 2px solid #333;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #1e1e1e;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transition: transform 0.4s ease;
+}
+
+.moldura-imagem:hover {
+    transform: scale(1.02);
+    border-color: #d2b48c; 
+}
+
+.moldura-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    filter: grayscale(20%) contrast(110%);
+}
+
+.legenda {
+    color: #d2b48c;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
